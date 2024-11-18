@@ -1,0 +1,151 @@
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  touch-action: pan-y;
+}
+
+body,
+html,
+.main .main_content {
+  overscroll-behavior: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main {
+  background: #fff
+  font-family: "Pretendard";
+  letter-spacing: -0.08rem;
+  max-width: 840px;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-overflow-scrolling: touch; /* 異붽� */
+}
+
+.App {
+  text-align: center;
+  background-color: #ffffff;
+  overflow-y: auto; /* �ㅽ겕濡ㅼ씠 蹂댁씠�꾨줉 �ㅼ젙 */
+}
+
+@media screen and (min-width: 840px) {
+  .main_content {
+    position: relative;
+    max-width: 840px;
+    min-height: 100vh;
+  }
+
+  .main_content:before {
+    content: " ";
+    position: absolute;
+    left: -1px;
+    top: 0;
+    bottom: 0;
+   
+  }
+
+  .main_content:after {
+    content: " ";
+    position: absolute;
+    right: -1px;
+    top: 0;
+    bottom: 0;
+   
+  }
+}
+
+.btn_content {
+  color: #fff;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: "Pretendard Variable";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+}
+
+.btn {
+  width: 344px;
+  height: 20px;
+  
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  height: 50px;
+  border: none;
+  transform: translate(-50%, -50%);
+
+
+  border-radius: 10px;
+  background: var(
+    --insta_main,
+    linear-gradient(90deg, #10acde 29.15%, #10b5ea 96.74%)
+  );
+}
+
+.img_container{
+  position: absolute; 
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+.middle_component{
+  position: absolute; 
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+
+width: 220px;
+
+}
+
+.middle_content{
+  color: #000;
+text-align: center;
+font-feature-settings: 'liga' off, 'clig' off;
+font-family: "Pretendard Variable";
+font-size: 30px;
+font-style: normal;
+font-weight: 600;
+line-height: 35px; /* 116.667% */
+letter-spacing: -1.2px;
+}
+
+.above_btn{
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  right: 0;
+  height: 70px;
+  border: none;
+  transform: translate(-50%, -50%);
+
+  color: rgba(144, 145, 154, 0.80);
+text-align: center;
+font-family: "Pretendard Variable";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: -0.8px;
+
+width:300px
+
+}
+
+

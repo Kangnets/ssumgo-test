@@ -1,12 +1,10 @@
 import { motion } from "framer-motion"; // framer-motion import
 import { MiddleComponent } from "../../components/ui/middleComponent";
 import clap from "../../assets/clap.webp";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 export function Success() {
-  const [visible, setVisible] = useState(false);
-
   const variants = {
     hidden: { opacity: 0, y: 50 }, // 화면 아래에서 시작
     visible: { opacity: 1, y: 0 }, // 최종 위치
@@ -21,14 +19,6 @@ export function Success() {
 
     return () => clearTimeout(timer);
   }, [navigate]);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setVisible(true);
-    }, 2500);
-
-    return () => clearTimeout(timer);
-  }, []);
 
   return (
     <motion.div

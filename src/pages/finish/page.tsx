@@ -42,6 +42,7 @@ export function Finish() {
       {visible && (
         <motion.div
           initial="hidden"
+          className="second"
           animate="visible"
           variants={variants}
           transition={{ duration: 1.5 }}

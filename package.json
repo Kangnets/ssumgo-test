@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "hompage": "https://ssumgo.com",
+  "hompage": "http://ssumgo.com",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

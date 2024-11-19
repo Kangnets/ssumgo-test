@@ -13,7 +13,7 @@ const Btn = React.forwardRef<HTMLDivElement, BtnProps>(({ content }, ref) => {
 
     if (currentPath === "/finish") {
       // 외부 URL로 이동
-      window.location.href = "https://google.com";
+      window.location.href = "https://forms.gle/cfWKMUyKKvVD4gxL6";
     } else {
       // 내부 경로로 이동
       navigate(`/success`);
